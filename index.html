@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <section class="text-center mt-10">
+      <input type="text" id="searchField" placeholder="Search your phone"
+        class="input input-bordered input-info w-full max-w-xs mr-2" />
+      <button id="searchBtn" class="btn btn-info text-white">Search</button>
+    </section>
+    <!-- <section>
+      <ul id="display-list">
+        <li>phone 1</li>
+        <li>phone 1</li>
+        <li>phone 1</li>
+      </ul>
+    </section> -->
+    <section>
+      <h2 id="nothingText" class="mt-10 text-center text-4xl text-orange-300">Nothing to show! Please search for phones...</h2>
+
+      <div class="phone-container grid grid-cols-3 gap-5 mt-6">
+
+      </div>
+    </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="hello.showModal()">open modal</button> -->
+    <dialog id="showDetailsModal" class="modal">
+      <div class="modal-box">
+        <h3 id="phone-title" class="text-center text-lg font-bold">Hello!</h3>
+        <p class="py-4">Press ESC key or click outside to close</p>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+
+  </main>
+  <script src="hello.js"></script>
+</body>
+
+</html>
